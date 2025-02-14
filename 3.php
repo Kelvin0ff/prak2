@@ -2,7 +2,7 @@
 echo "Выполнил работу Петров Илья П-23\n";
 echo "Введите месяц цифрой от 1 до 12: ";
 $mesyac = readline(); 
-$DneyVgodu = [
+$dneyvmesyace = [
     1 => 31,
     2 => 28,
     3 => 31,
@@ -17,7 +17,7 @@ $DneyVgodu = [
     12 => 31
 ];
 
-$nazvanie_mesyaca = [
+$nazvaniemesyaca = [
     1 => "Январь",
     2 => "Февраль",
     3 => "Март",
@@ -32,11 +32,11 @@ $nazvanie_mesyaca = [
     12 => "Декабрь"
 
 ];
-if (array_key_exists($mesyac, $DneyVgodu)) {
+if (array_key_exists($mesyac, $dneyvmesyace)) {
     echo "\n";
     echo "Год не високосный. \n";
-    echo "Название месяца: " . $nazvanie_mesyaca[$mesyac]; echo "\n";
-    echo "Количество дней в месяце: " . $DneyVgodu[$mesyac];
+    echo "Название месяца: " . $nazvaniemesyaca[$mesyac]; echo "\n";
+    echo "Количество дней в месяце: " . $dneyvmesyace[$mesyac];
     echo "\n";
 } else {
     echo "Неверный номер месяца";
